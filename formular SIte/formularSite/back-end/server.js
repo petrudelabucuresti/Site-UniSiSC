@@ -10,7 +10,7 @@ app.listen(port, () => {
 });
 app.use("/", express.static("../front-end"));
 const connection = mysql.createConnection({
-  host: "localhost",
+  host: "party-for-life.netlify.app",
   user: "root",
   password: "",
   database: "Participant",
