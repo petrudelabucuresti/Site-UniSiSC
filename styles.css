@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+/* INTRODUCERE PAGINA */
+
+#page-introduction{
+    position: relative;
+    height: 60vh;
+    background-image: url("./images/bamboo-club.jpg");
+    background-size: auto;
+    color: white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2.5vh 10vw;
+    position: relative;
+}
+
+.navbar *{
+    cursor: pointer;
+}
+
+.logo{
+    width: 75px;
+}
+
+.navbar h1{
+    font-weight: 500;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover{
+    color: rgb(220, 179, 102);
+}
+
+.navbar h1{
+    transition: transform .2s ease-in-out;
+}
+
+.navbar h1:hover{
+    transform: scale(1.1);
+}
+
+.association{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 34px;
+    animation: pulse 2s infinite;
+}
+
+.motto{
+    letter-spacing: 0.3rem;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+        color: red;
+	}
+
+	70% {
+		transform: scale(1);
+        color: blue;
+	}
+
+	100% {
+		transform: scale(0.95);
+        color: pink;
+	}
+}
+
+/* TITLU PETRECERE SI EVENT */
+
+.event-introduction{
+    text-align: center;
+    position: relative;
+    margin-top: 15vh;
+}
+
+/* BACKGROUND MODAL */
+
+#background-modal{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+}
+
+/* CONTENT SI POZE */
+
+#page-content{
+    padding: 0 10vw;
+}
+
+.content-section{
+    margin: 10vh 0;
+}
+
+.content-section h2{
+    margin-bottom: 2vh;
+}
+
+.content-picture{
+    display: flex;   
+    align-items: center;
+    gap: 15vw;
+    font-size: 18px;
+}
+
+.content-picture p{
+    background-color: rgb(21 128 61);
+    color: white;
+    padding: 1.8rem 3.2rem;
+    border-radius: 25px;
+}
+
+.content-picture span{
+    color: orange;
+}
+
+.pic{
+    width: 375px;
+    border-radius: 20px;
+}
+
+#locatie{
+    text-align: center;
+}
+
+#locatie img{
+    width: 50vw;
+}
+
+.sign-up{
+    text-align: center;
+    margin-bottom: 8vh;
+}
+
+.sign-up h3{
+    margin-bottom: 4vh;
+}
+
+button{
+    background-color: rgb(234 179 8);
+    border: 0;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: background-color 1s ease-in-out;
+    transition: color 0.8s ease-in-out;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* FOOTER */
+
+.footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10vh 0;
+    background-color: black;
+    color: white;
+}
+
+.footer h4{
+    margin-bottom: 8px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.icon{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+}
+
